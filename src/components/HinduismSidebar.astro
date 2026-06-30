@@ -1,0 +1,308 @@
+<div id="sidebar" class="sidebar">
+<div class="sidebar-top">
+
+  <div class="sidebar-heading">
+    Related Topics
+  </div>
+
+  <button id="close-btn" class="close-btn">
+    «
+  </button>
+
+</div>
+
+  <details>
+    <summary>Divine Lineages</summary>
+    <ul>
+      <li><a href="/hinduism/divine-lineages/suryavansha/">Suryavansha</a></li>
+      <li><a href="/hinduism/divine-lineages/chandravansha/">Chandravansha</a></li>
+      <li><a href="/hinduism/divine-lineages/agnivansha/">Agnivansha</a></li>
+      <li><a href="/hinduism/divine-lineages/nagavansha/">Nagavansha</a></li>
+      <li><a href="/hinduism/divine-lineages/rishivansha/">Rishivansha</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Divine Entities</summary>
+    <ul>
+      <li><a href="/hinduism/divine-entities/devas/">Devas</a></li>
+      <li><a href="/hinduism/divine-entities/saptarishi/">Saptarishi</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Dharmic Sites</summary>
+    <ul>
+      <li><a href="/hinduism/dharmic-sites/sacred-temples/">Sacred Temples</a></li>
+      <li><a href="/hinduism/dharmic-sites/pilgrimage-sites/">Pilgrimage Sites</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Communities</summary>
+    <ul>
+      <li><a href="#">Brahmin</a></li>
+      <li><a href="#">Gurjar</a></li>
+      <li><a href="#">Jat</a></li>
+      <li><a href="#">Kayastha</a></li>
+      <li><a href="#">Khas</a></li>
+      <li><a href="#">Ror</a></li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Analysis</summary>
+    <ul>
+      <li><a href="/hinduism/analysis/caste-analysis/">Caste Analysis</a></li>
+      <li><a href="/hinduism/analysis/gotra-system/">Gotra System</a></li>
+    </ul>
+  </details>
+</div>
+
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<style>
+  :root {
+    --sidebar-bg:  rgba(7, 4, 10, 0.85); /* matches topnav/footer dark theme */
+    --sidebar-text: #f5f1e8;
+    --sidebar-link-hover: #f0c75e; /* gold accent */
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* start hidden */
+    width: 280px;
+    height: 100vh;
+
+    background-color: var(--sidebar-bg); /* solid color, themed */
+    color: var(--sidebar-text);
+    
+    padding: 1rem 0.9rem;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 20px rgba(0,0,0,0.35);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px); /* subtle premium effect */
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 999; /* below sidebar */
+  }
+
+  .sidebar-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.sidebar-top {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 1.4rem;
+
+  padding-bottom: 0.8rem;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+ .sidebar-heading {
+
+  font-family: 'Cinzel', serif;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: var(--sidebar-text);
+
+  text-shadow:
+    0 0 12px rgba(240,199,94,0.08);
+ }
+
+.close-btn {
+
+  background: none;
+
+  border: none;
+
+  color: var(--sidebar-link-hover);
+
+  font-family: 'Cinzel', serif;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding-right: 5px;
+
+  line-height: 1;
+
+  animation:
+    sidebarBounce 1.8s ease-in-out infinite;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.close-btn:hover {
+
+  color: #fff;
+
+  transform: translateX(-3px);
+}
+
+  details {
+    margin-bottom: 0.9rem;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: var(--sidebar-text);
+    padding: 0.3rem 0;
+    padding-left: 0.2rem;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+  }
+
+  summary:hover {
+    color: var(--sidebar-link-hover);
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin: 0rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--sidebar-text);
+    transition: color 0.3s ease;
+    line-height: 1.35;
+    font-family: 'EB Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    color: var(--sidebar-text);
+  }
+
+  a:hover {
+    color: var(--sidebar-link-hover);
+  }
+
+  @keyframes sidebarBounce {
+
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-4px);
+  }
+}
+
+  @media (max-width: 900px) {
+
+    .sidebar {
+      width: 220px;   /* reduced from 260px */
+      padding: 1.1rem;
+    }
+
+    .sidebar summary {
+      font-size: 0.95rem;
+    }
+
+    .sidebar a {
+      font-size: 0.9rem;
+    }
+
+    .sidebar .close-btn {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .sidebar {
+      width: 45vw;   /* reduced from 80vw */
+      padding: 1rem;
+    }
+
+    .sidebar summary {
+      font-size: 0.9rem;
+    }
+
+    .sidebar a {
+      font-size: 0.85rem;
+    }
+
+    .sidebar li {
+      margin: 0.4rem 0;
+    }
+
+    .sidebar .close-btn {
+      font-size: 1.2rem;
+    }
+  }
+  </style>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebar-overlay");
+    const closeBtn = document.getElementById("close-btn");
+
+    function openSidebar() {
+      sidebar?.classList.add("open");
+      overlay?.classList.add("show");
+      document.body.style.overflow = "hidden"; // lock scroll
+    }
+
+    function closeSidebar() {
+      sidebar?.classList.remove("open");
+      overlay?.classList.remove("show");
+      document.body.style.overflow = ""; // restore scroll
+    }
+
+    window.openSidebar = openSidebar;
+
+    closeBtn?.addEventListener("click", closeSidebar);
+    overlay?.addEventListener("click", closeSidebar); // click outside closes
+
+  });
+</script>

@@ -1,0 +1,1520 @@
+---
+import HinduismLayout from "../../../layouts/HinduismLayout.astro";
+---
+
+<HinduismLayout title="Chakras" fullWidth={true}>
+
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <span class="nav-brand">सप्त चक्र</span>
+  <div class="nav-links">
+    <a href="#intro">Origins</a>
+    <a href="#scriptures">Scriptures</a>
+    <a href="#chakras">Seven Chakras</a>
+    <a href="#kundalini">Kundalini</a>
+    <a href="#science">Science</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <h1 class="devanagari-title" id="hero-title">सप्त चक्र</h1>
+    <p class="hero-sub" id="hero-sub">Sapta Chakra — The Seven Vortices of Consciousness</p>
+    <p class="hero-tagline" id="hero-tagline">
+      Ancient Wisdom · Yogic Science · Tantric Knowledge<br>
+      A Journey Through the Subtle Body
+    </p>
+    <div class="hero-btns" id="hero-btns">
+      <a href="#chakras" class="btn-primary">Explore Seven Chakras</a>
+      <a href="#kundalini" class="btn-ghost">Journey Through Kundalini</a>
+    </div>
+  </div>
+  <div class="scroll-indicator" id="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="reveal">
+    <p class="section-label">What Are Chakras</p>
+    <h2 class="section-title">Wheels of <em>prāṇic</em> energy<br>within the subtle body</h2>
+    <p class="prose">The word <strong>chakra</strong> (चक्र) is Sanskrit for "wheel" or "disc" — a term describing spinning vortices of prāṇa (life-force energy) that Yogic and Tantric traditions describe as existing within the <em>sūkṣma śarīra</em>, the subtle or energetic body that underlies the physical form.</p>
+    <p class="prose">Classical Hindu philosophy distinguishes three bodies: the gross physical body (<em>sthūla śarīra</em>), the subtle body (<em>sūkṣma śarīra</em>) composed of prāṇa, mind, and intellect, and the causal body (<em>kāraṇa śarīra</em>) of deep unconscious impressions. The chakra system belongs to the subtle body and should not be understood as physical organs detectable through surgery — they are energetic and experiential in nature.</p>
+    <p class="prose">It is important to note that the chakra system as popularly known today — especially the seven-chakra rainbow model — is largely a synthesis of Tantric Śaiva texts, Hatha Yoga manuals, and 20th-century Western reinterpretations. The tradition is both ancient and contested; different texts describe different numbers of chakras. What follows is grounded in classical textual sources.</p>
+  </div>
+  <div class="divider"></div>
+  <div class="intro-grid reveal">
+    <div class="intro-card">
+      <span class="intro-card-icon">स</span>
+      <h3>Sūkṣma Śarīra — The Subtle Body</h3>
+      <p>Yogic philosophy holds that consciousness operates through a hierarchy of bodies. The subtle body, invisible to ordinary perception, carries the patterns of karma, prāṇa, and saṃskāras (mental impressions) that shape experience.</p>
+    </div>
+    <div class="intro-card">
+      <span class="intro-card-icon">न</span>
+      <h3>Nāḍīs — Energy Channels</h3>
+      <p>The Hatha Yoga Pradīpikā speaks of 72,000 nāḍīs (energy channels). Of these, three are primary: Suṣumnā (central spine channel), Iḍā (lunar, left), and Piṅgalā (solar, right). Chakras exist as nodal points where these channels intersect.</p>
+    </div>
+    <div class="intro-card">
+      <span class="intro-card-icon">प्र</span>
+      <h3>Prāṇa — Life Force</h3>
+      <p>Prāṇa is not merely "breath" — it is the animating intelligence behind all biological and psychological processes. The five prāṇas (Prāṇa, Apāna, Samāna, Udāna, Vyāna) govern different regions of the body corresponding to chakra territories.</p>
+    </div>
+    <div class="intro-card">
+      <span class="intro-card-icon">त</span>
+      <h3>Tantra — The Theoretical Framework</h3>
+      <p>Most chakra knowledge comes from Śākta and Śaiva Tantric texts, not the Vedas or early Upaniṣads. Tantra views the human body as a microcosm of the cosmos — a vehicle for spiritual liberation through the awakening of Śakti (divine energy).</p>
+    </div>
+    <div class="intro-card">
+      <span class="intro-card-icon">यो</span>
+      <h3>Yoga — The Practical Path</h3>
+      <p>Haṭha Yoga operationalizes chakra theory through āsana, prāṇāyāma, mudrā, and bandha. Kuṇḍalinī Yoga specifically focuses on arousing the dormant energy at Mūlādhāra and guiding it upward through the chakras toward Sahasrāra.</p>
+    </div>
+    <div class="intro-card">
+      <span class="intro-card-icon">मो</span>
+      <h3>Mokṣa — The Goal</h3>
+      <p>The spiritual purpose of chakra work is not health or emotional wellness in isolation — the classical aim is mokṣa: liberation from the cycle of rebirth. Each chakra corresponds to progressively subtler levels of consciousness on that journey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPTURES -->
+<div class="section-full bg-dark-1" id="scriptures">
+<section style="max-width:1200px; margin:0 auto; padding: 7rem 0;">
+  <div class="reveal">
+    <p class="section-label">Textual Origins</p>
+    <h2 class="section-title">What the <em>ancient texts</em><br>actually say</h2>
+    <p class="prose">The chakra system was not described in a single definitive scripture but emerged across centuries of Tantric, Yogic, and Āgamic literature. The primary source for the seven-chakra model is the <em>Ṣaṭ-Cakra-Nirūpaṇa</em> (1577 CE), yet earlier texts hint at similar frameworks.</p>
+  </div>
+  <div class="scripture-grid reveal">
+    <div class="scripture-card">
+      <div class="scripture-name">षट्चक्र निरूपण</div>
+      <div class="scripture-era">Sat-Cakra-Nirupana · 1577 CE · Pūrṇānanda</div>
+      <p class="scripture-quote">"There is a lotus of four petals in the region of the mūlādhāra..." — Verse 4</p>
+      <p>The definitive classical source for the seven-chakra model. Composed by the Bengali Tantric Pūrṇānanda, it minutely describes each chakra's petals, presiding deities, bīja mantras, and geometrical forms. It is the primary text from which most modern knowledge derives.</p>
+    </div>
+    <div class="scripture-card">
+      <div class="scripture-name">हठयोग प्रदीपिका</div>
+      <div class="scripture-era">Hatha Yoga Pradipika · ~14th century CE · Svātmārāma</div>
+      <p class="scripture-quote">"Suṣumnā is in the middle, Iḍā on the left, Piṅgalā on the right..." — Chapter 4</p>
+      <p>One of the most important Hatha Yoga manuals. Describes the three primary nāḍīs and their relationship to chakra activation, prāṇāyāma, and kuṇḍalinī awakening. Less focused on chakra symbolism, more on the physiological practice.</p>
+    </div>
+    <div class="scripture-card">
+      <div class="scripture-name">शिव संहिता</div>
+      <div class="scripture-era">Shiva Samhita · ~17th century CE</div>
+      <p>Describes seven chakras and 350,000 nāḍīs. Notable for attributing the text to Lord Śiva speaking to Pārvatī — framing yogic knowledge as divine revelation. It describes chakras explicitly as part of the kuṇḍalinī awakening pathway and emphasizes guru guidance.</p>
+    </div>
+    <div class="scripture-card">
+      <div class="scripture-name">योगकुण्डली उपनिषद्</div>
+      <div class="scripture-era">Yoga Kundalini Upanishad · circa 17th century CE</div>
+      <p>One of the 108 minor Upaniṣads. Explicitly addresses kuṇḍalinī śakti and its movement through chakras. Importantly, it cautions that this energy must be awakened gradually and only under qualified guidance — a warning often missing from popular accounts.</p>
+    </div>
+    <div class="scripture-card">
+      <div class="scripture-name">विज्ञान भैरव तन्त्र</div>
+      <div class="scripture-era">Vijnana Bhairava Tantra · ~7th–8th century CE</div>
+      <p>A Kaśmīr Śaiva text containing 112 dhāraṇā (concentration) practices. While not a chakra manual per se, it describes practices of focusing awareness on specific body centers — an indirect textual ancestor of chakra meditation systems.</p>
+    </div>
+    <div class="scripture-card">
+      <div class="scripture-name">तैत्तिरीय उपनिषद्</div>
+      <div class="scripture-era">Taittiriya Upanishad · ~600 BCE · Vedic Period</div>
+      <p>The Vedic text that describes the Pañcakoṣa model — five sheaths of the self (annamaya, prāṇamaya, manomaya, vijñānamaya, ānandamaya). While not describing chakras directly, this framework of layered bodies is the philosophical foundation on which the chakra system was later built.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- BODY MAP -->
+<div class="section-full bg-dark-1" id="bodymap">
+<section style="max-width:1200px; margin:0 auto; padding:7rem 0;">
+  <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+    <p class="section-label" style="justify-content:center; display:block;">The Subtle Body Atlas</p>
+    <h2 class="section-title" style="text-align:center;">Where the <em>chakras</em> reside<br>in the human form</h2>
+    <p class="prose" style="margin:0 auto; text-align:center;">Hover over each chakra point to reveal its name, location, and primary domain. The positions shown follow the classical Tantric mapping from the Ṣaṭ-Cakra-Nirūpaṇa.</p>
+  </div>
+  <div class="reveal" style="display:flex; justify-content:center;">
+    <div id="body-map-container" style="position:relative; width:100%; max-width:900px;">
+      <svg id="body-svg" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block;">
+        <defs>
+          <filter id="glow-r"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <radialGradient id="body-grad" cx="50%" cy="45%" r="55%">
+            <stop offset="0%" stop-color="rgba(245,239,230,0.12)"/>
+            <stop offset="100%" stop-color="rgba(245,239,230,0.03)"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Human silhouette — seated meditation pose (SVG path) -->
+        <g id="human-silhouette" opacity="0.55">
+          <!-- torso -->
+          <ellipse cx="450" cy="340" rx="72" ry="110" fill="url(#body-grad)" stroke="rgba(245,239,230,0.18)" stroke-width="1"/>
+          <!-- head -->
+          <ellipse cx="450" cy="148" rx="48" ry="56" fill="url(#body-grad)" stroke="rgba(245,239,230,0.18)" stroke-width="1"/>
+          <!-- neck -->
+          <rect x="432" y="200" width="36" height="36" rx="6" fill="url(#body-grad)" stroke="rgba(245,239,230,0.12)" stroke-width="1"/>
+          <!-- left arm -->
+          <path d="M382 285 Q340 320 310 390 Q295 420 305 440" fill="none" stroke="rgba(245,239,230,0.18)" stroke-width="18" stroke-linecap="round"/>
+          <!-- right arm -->
+          <path d="M518 285 Q560 320 590 390 Q605 420 595 440" fill="none" stroke="rgba(245,239,230,0.18)" stroke-width="18" stroke-linecap="round"/>
+          <!-- left leg / knee fold -->
+          <path d="M390 445 Q360 480 305 500 Q280 510 285 530" fill="none" stroke="rgba(245,239,230,0.18)" stroke-width="20" stroke-linecap="round"/>
+          <!-- right leg / knee fold -->
+          <path d="M510 445 Q540 480 595 500 Q620 510 615 530" fill="none" stroke="rgba(245,239,230,0.18)" stroke-width="20" stroke-linecap="round"/>
+          <!-- seated base -->
+          <ellipse cx="450" cy="530" rx="160" ry="25" fill="rgba(245,239,230,0.05)" stroke="rgba(245,239,230,0.08)" stroke-width="1"/>
+          <!-- crossed feet suggestion -->
+          <ellipse cx="330" cy="535" rx="45" ry="18" fill="rgba(245,239,230,0.08)" stroke="rgba(245,239,230,0.12)" stroke-width="1"/>
+          <ellipse cx="570" cy="535" rx="45" ry="18" fill="rgba(245,239,230,0.08)" stroke="rgba(245,239,230,0.12)" stroke-width="1"/>
+          <!-- hands resting on knees -->
+          <ellipse cx="305" cy="445" rx="22" ry="14" fill="rgba(245,239,230,0.08)" stroke="rgba(245,239,230,0.12)" stroke-width="1"/>
+          <ellipse cx="595" cy="445" rx="22" ry="14" fill="rgba(245,239,230,0.08)" stroke="rgba(245,239,230,0.12)" stroke-width="1"/>
+          <!-- spine line -->
+          <line x1="450" y1="202" x2="450" y2="490" stroke="rgba(201,168,76,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        </g>
+
+        <!-- Chakra points — each is a group with data for JS tooltip -->
+        <!-- Sahasrara - crown -->
+        <g class="chakra-pt" data-idx="6" data-cx="450" data-cy="98">
+          <circle cx="450" cy="98" r="16" fill="rgba(201,168,76,0.15)" stroke="#c9a84c" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="98" r="9" fill="#c9a84c" opacity="0.9"/>
+          <line x1="466" y1="98" x2="560" y2="75" stroke="rgba(201,168,76,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Ajna - third eye -->
+        <g class="chakra-pt" data-idx="5" data-cx="450" data-cy="155">
+          <circle cx="450" cy="155" r="14" fill="rgba(119,85,221,0.15)" stroke="#7755dd" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="155" r="8" fill="#7755dd" opacity="0.9"/>
+          <line x1="464" y1="155" x2="560" y2="145" stroke="rgba(119,85,221,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Vishuddha - throat -->
+        <g class="chakra-pt" data-idx="4" data-cx="450" data-cy="220">
+          <circle cx="450" cy="220" r="14" fill="rgba(50,150,255,0.15)" stroke="#3296ff" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="220" r="8" fill="#3296ff" opacity="0.9"/>
+          <line x1="464" y1="220" x2="560" y2="215" stroke="rgba(50,150,255,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Anahata - heart -->
+        <g class="chakra-pt" data-idx="3" data-cx="450" data-cy="285">
+          <circle cx="450" cy="285" r="16" fill="rgba(50,200,80,0.15)" stroke="#32c850" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="285" r="9" fill="#32c850" opacity="0.9"/>
+          <line x1="434" y1="285" x2="340" y2="275" stroke="rgba(50,200,80,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Manipura - solar plexus -->
+        <g class="chakra-pt" data-idx="2" data-cx="450" data-cy="350">
+          <circle cx="450" cy="350" r="14" fill="rgba(255,200,0,0.15)" stroke="#ffc800" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="350" r="8" fill="#ffc800" opacity="0.9"/>
+          <line x1="434" y1="350" x2="340" y2="345" stroke="rgba(255,200,0,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Svadhishthana - sacral -->
+        <g class="chakra-pt" data-idx="1" data-cx="450" data-cy="415">
+          <circle cx="450" cy="415" r="14" fill="rgba(255,120,0,0.15)" stroke="#ff8800" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="415" r="8" fill="#ff8800" opacity="0.9"/>
+          <line x1="434" y1="415" x2="340" y2="415" stroke="rgba(255,120,0,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+        <!-- Muladhara - root -->
+        <g class="chakra-pt" data-idx="0" data-cx="450" data-cy="480">
+          <circle cx="450" cy="480" r="16" fill="rgba(255,60,60,0.15)" stroke="#ff5555" stroke-width="1.5" filter="url(#glow-r)" class="cpt-ring"/>
+          <circle cx="450" cy="480" r="9" fill="#ff5555" opacity="0.9"/>
+          <line x1="434" y1="480" x2="340" y2="490" stroke="rgba(255,60,60,0.35)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        </g>
+
+        <!-- Static labels — right side -->
+        <text x="568" y="79" fill="rgba(201,168,76,0.85)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">SAHASRĀRA</text>
+        <text x="568" y="92" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Crown · Spirituality</text>
+
+        <text x="568" y="149" fill="rgba(119,85,221,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">ĀJÑĀ</text>
+        <text x="568" y="162" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Third Eye · Awareness</text>
+
+        <text x="568" y="219" fill="rgba(50,150,255,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">VIŚUDDHA</text>
+        <text x="568" y="232" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Throat · Communication</text>
+
+        <!-- Left side labels -->
+        <text x="250" y="279" text-anchor="end" fill="rgba(50,200,80,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">ANĀHATA</text>
+        <text x="250" y="292" text-anchor="end" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Heart · Love &amp; Healing</text>
+
+        <text x="250" y="349" text-anchor="end" fill="rgba(255,200,0,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">MAṆIPŪRA</text>
+        <text x="250" y="362" text-anchor="end" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Solar Plexus · Power</text>
+
+        <text x="250" y="419" text-anchor="end" fill="rgba(255,136,0,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">SVĀDHIṢṬHĀNA</text>
+        <text x="250" y="432" text-anchor="end" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Sacral · Creativity</text>
+
+        <text x="250" y="484" text-anchor="end" fill="rgba(255,85,85,0.9)" font-family="'Rajdhani',sans-serif" font-size="12" letter-spacing="0.15em">MŪLĀDHĀRA</text>
+        <text x="250" y="497" text-anchor="end" fill="rgba(245,239,230,0.35)" font-family="'Cormorant Garamond',serif" font-size="10" font-style="italic">Root · Foundation</text>
+      </svg>
+
+      <!-- Hover tooltip -->
+      <div id="chakra-tooltip" style="
+        display:none; position:absolute; pointer-events:none;
+        background:rgba(13,10,24,0.95); border:1px solid rgba(201,168,76,0.3);
+        padding:1rem 1.4rem; min-width:220px; max-width:280px;
+        backdrop-filter:blur(12px); z-index:50;
+      ">
+        <div id="tt-name" style="font-family:'Rajdhani',sans-serif; font-size:0.75rem; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:0.2rem;"></div>
+        <div id="tt-devanagari" style="font-family:'Noto Serif Devanagari',serif; font-size:1.4rem; color:var(--gold); line-height:1.2; margin-bottom:0.3rem;"></div>
+        <div id="tt-location" style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:0.9rem; color:rgba(245,239,230,0.5); margin-bottom:0.5rem;"></div>
+        <div id="tt-domain" style="font-family:'Cormorant Garamond',serif; font-size:0.95rem; color:rgba(245,239,230,0.75); line-height:1.6;"></div>
+        <div id="tt-element" style="margin-top:0.6rem; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(201,168,76,0.55);"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- CHAKRAS -->
+<section id="chakras">
+  <p class="section-label">The Seven Chakras</p>
+  <h2 class="section-title">सप्त चक्राणि — <em>Sapta Cakrāṇi</em></h2>
+  <div class="chakra-nav">
+    <button class="chakra-tab active" data-chakra="0">Mūlādhāra</button>
+    <button class="chakra-tab" data-chakra="1">Svādhiṣṭhāna</button>
+    <button class="chakra-tab" data-chakra="2">Maṇipūra</button>
+    <button class="chakra-tab" data-chakra="3">Anāhata</button>
+    <button class="chakra-tab" data-chakra="4">Viśuddha</button>
+    <button class="chakra-tab" data-chakra="5">Ājñā</button>
+    <button class="chakra-tab" data-chakra="6">Sahasrāra</button>
+  </div>
+  <div id="chakra-panels"></div>
+</section>
+
+<!-- KUNDALINI -->
+<div class="section-full bg-dark-2" id="kundalini">
+<section style="max-width:1200px; margin:0 auto; padding:7rem 0;">
+  <div class="reveal">
+    <p class="section-label">Kundalini & Nadis</p>
+    <h2 class="section-title">The <em>serpent force</em><br>and the three rivers</h2>
+  </div>
+  <div class="kundalini-wrap reveal">
+    <div>
+      <p class="prose">Kuṇḍalinī (कुण्डलिनी) literally means "she who is coiled" — from <em>kuṇḍala</em>, a coiled serpent. According to Tantric physiology, this primordial Śakti lies dormant at the base of the spine in Mūlādhāra chakra, coiled three-and-a-half times around Svayambhu Liṅga, a subtle energetic form.</p>
+      <div class="divider"></div>
+      <p class="section-label" style="margin-top:0">The Three Primary Nāḍīs</p>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Suṣumnā</span>
+        <span class="distinction-text">The central channel running through the spinal column from Mūlādhāra to Sahasrāra. When Iḍā and Piṅgalā are balanced through prāṇāyāma, Suṣumnā opens and kuṇḍalinī can ascend. This is the primary pathway of spiritual awakening.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-spiritual">Iḍā</span>
+        <span class="distinction-text">The lunar nāḍī, associated with the left nostril, cooling energy, introspection, feminine principle, and Śiva consciousness. Governs the parasympathetic dimension of experience.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-science">Piṅgalā</span>
+        <span class="distinction-text">The solar nāḍī, associated with the right nostril, heating energy, activity, masculine principle, and Śakti. Governs the sympathetic dimension and extroversion.</span>
+      </div>
+      <div class="divider"></div>
+      <p class="section-label" style="margin-top:0">Traditional Cautions</p>
+      <p class="prose">Classical texts are uniform in warning that kuṇḍalinī awakening should not be forcibly induced. The Yoga Kuṇḍalinī Upaniṣad, the Shiva Saṃhitā, and modern teachers like Swami Sivananda all emphasize that premature or unguided awakening can produce severe psychological and physical disturbances — described in Yogic literature as <em>prāṇic crises</em>.</p>
+      <p class="prose" style="margin-top:1rem">The guru-disciple relationship (paramparā) was designed precisely to transmit these practices safely. Contemporary literature on <em>kuṇḍalinī syndrome</em> documents real cases of individuals experiencing disorientation, somatic disturbances, and psychiatric symptoms following intensive unsupervised practice.</p>
+    </div>
+    <div class="nadi-diagram">
+      <svg viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow-blue"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="glow-gold"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- Sushumna - central gold line -->
+        <line x1="160" y1="30" x2="160" y2="400" stroke="rgba(201,168,76,0.5)" stroke-width="2" filter="url(#glow-gold)"/>
+        <!-- Ida - blue serpent path left -->
+        <path d="M160 400 Q120 370 160 340 Q200 310 160 280 Q120 250 160 220 Q200 190 160 160 Q120 130 160 100 Q200 70 160 40" stroke="#7badf5" stroke-width="1.5" opacity="0.7" fill="none" filter="url(#glow-blue)"/>
+        <!-- Pingala - amber serpent path right -->
+        <path d="M160 400 Q200 370 160 340 Q120 310 160 280 Q200 250 160 220 Q120 190 160 160 Q200 130 160 100 Q120 70 160 40" stroke="#e8a44a" stroke-width="1.5" opacity="0.7" fill="none"/>
+        <!-- Chakra nodes -->
+        <circle cx="160" cy="395" r="10" fill="rgba(255,60,60,0.25)" stroke="#ff5555" stroke-width="1.5"/>
+        <circle cx="160" cy="330" r="9" fill="rgba(255,120,0,0.2)" stroke="#ff8800" stroke-width="1.5"/>
+        <circle cx="160" cy="265" r="9" fill="rgba(255,200,0,0.2)" stroke="#ffc800" stroke-width="1.5"/>
+        <circle cx="160" cy="200" r="9" fill="rgba(50,200,80,0.2)" stroke="#32c850" stroke-width="1.5"/>
+        <circle cx="160" cy="145" r="9" fill="rgba(50,150,255,0.2)" stroke="#3296ff" stroke-width="1.5"/>
+        <circle cx="160" cy="95" r="9" fill="rgba(100,80,220,0.2)" stroke="#6450dc" stroke-width="1.5"/>
+        <circle cx="160" cy="38" r="14" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.6)" stroke-width="1.5" filter="url(#glow-gold)"/>
+        <!-- Labels -->
+        <text x="185" y="399" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">MŪLĀDHĀRA</text>
+        <text x="185" y="334" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">SVĀDHIṢṬHĀNA</text>
+        <text x="185" y="269" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">MAṆIPŪRA</text>
+        <text x="185" y="204" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">ANĀHATA</text>
+        <text x="185" y="149" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">VIŚUDDHA</text>
+        <text x="185" y="99" fill="rgba(245,239,230,0.5)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">ĀJÑĀ</text>
+        <text x="185" y="42" fill="rgba(201,168,76,0.8)" font-family="'Rajdhani',sans-serif" font-size="10" letter-spacing="0.1em">SAHASRĀRA</text>
+        <!-- Legend -->
+        <line x1="30" y1="15" x2="50" y2="15" stroke="rgba(201,168,76,0.7)" stroke-width="2"/>
+        <text x="55" y="19" fill="rgba(245,239,230,0.45)" font-family="'Rajdhani',sans-serif" font-size="9">Suṣumnā</text>
+        <line x1="30" y1="30" x2="50" y2="30" stroke="#7badf5" stroke-width="1.5"/>
+        <text x="55" y="34" fill="rgba(245,239,230,0.45)" font-family="'Rajdhani',sans-serif" font-size="9">Iḍā</text>
+        <line x1="100" y1="30" x2="120" y2="30" stroke="#e8a44a" stroke-width="1.5"/>
+        <text x="125" y="34" fill="rgba(245,239,230,0.45)" font-family="'Rajdhani',sans-serif" font-size="9">Piṅgalā</text>
+      </svg>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ACTIVATION -->
+<section id="activation">
+  <div class="reveal">
+    <p class="section-label">Traditional Methods</p>
+    <h2 class="section-title">Paths of <em>awakening</em></h2>
+    <p class="prose">Classical Yogic texts describe a range of interrelated practices for purifying the nāḍīs and activating the chakras. None of these is a quick fix — they are described as requiring years of disciplined practice under guidance. Modern wellness adaptations often strip away the ethical prerequisites (yama-niyama) that traditional systems consider foundational.</p>
+  </div>
+  <div class="practice-grid reveal">
+    <div class="practice-card">
+      <span class="practice-icon">प्र</span>
+      <h4>Prāṇāyāma</h4>
+      <p>Regulation of prāṇa through breath control. Nāḍī Śodhana (alternate nostril breathing) is considered the primary practice for balancing Iḍā and Piṅgalā and preparing Suṣumnā for kuṇḍalinī ascent.</p>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">मं</span>
+      <h4>Mantra & Japa</h4>
+      <p>Repetition of bīja mantras associated with each chakra (Laṃ, Vaṃ, Raṃ, Yaṃ, Haṃ, Om). Sound vibration is held to directly resonate with the subtle energy of each center, stimulating activation over time.</p>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">मु</span>
+      <h4>Mudrā & Bandha</h4>
+      <p>Mudrās are symbolic gestures that redirect prāṇic flow. The three bandhas (Mūla, Uḍḍīyāna, Jālandhara) create energetic locks that intensify and direct the flow of prāṇa upward through Suṣumnā.</p>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">आ</span>
+      <h4>Āsana</h4>
+      <p>Physical postures that develop the body's capacity to hold and channel energy. Specific āsanas affect specific chakras — e.g., Mūla Bandha āsanas for Mūlādhāra, heart openers for Anāhata.</p>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">ध्य</span>
+      <h4>Dhyāna</h4>
+      <p>Meditation involving sustained, concentrated awareness on a chakra's location, symbol, deity, or quality. Distinguished from casual visualization — classical dhyāna requires stable prāṇāyāma practice as its foundation.</p>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">भ</span>
+      <h4>Bhakti</h4>
+      <p>Devotional practice directed toward the deity or principle associated with a chakra. Opening Anāhata, for instance, is closely linked in bhakti traditions to practices of compassion, devotion, and seva (selfless service).</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<div class="section-full bg-dark-1" id="science">
+<section style="max-width:1200px; margin:0 auto; padding:7rem 0;">
+  <div class="reveal">
+    <p class="section-label">Science & Tradition</p>
+    <h2 class="section-title">Four lenses for<br>understanding <em>chakras</em></h2>
+    <p class="prose">Intellectual honesty requires distinguishing between what ancient texts claim, what modern science has verified, what psychological frameworks can explain, and what remains genuinely open. Conflating these produces both bad spirituality and bad science.</p>
+  </div>
+  <div class="dual-col reveal">
+    <div>
+      <p class="chakra-section-head">Tradition says</p>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-spiritual">Textual</span>
+        <span class="distinction-text">Chakras are real energetic structures within the subtle body, detectable through refined awareness developed in deep meditation practice — not through physical instruments.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-spiritual">Textual</span>
+        <span class="distinction-text">Activation of chakras produces genuine transformation of consciousness — not metaphorical change, but actual shifts in perception and identity.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-spiritual">Textual</span>
+        <span class="distinction-text">The system is experiential and initiatory — its truth is verified through practice, not debate. The texts themselves say this.</span>
+      </div>
+      <p class="chakra-section-head" style="margin-top:2rem">Science finds</p>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-science">Scientific</span>
+        <span class="distinction-text">No physical structures corresponding to chakras have been identified through anatomy, neuroimaging, or biophysical measurement. No reproducible empirical evidence for subtle bodies as described in Yogic texts.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-science">Scientific</span>
+        <span class="distinction-text">Meditation neuroscience (Newberg, Davidson) documents real changes in brain activity, cortical thickness, and autonomic regulation from sustained practice — but these are explained by neuroscience without requiring the chakra framework.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-science">Scientific</span>
+        <span class="distinction-text">The claimed physiological correspondences (Mūlādhāra = adrenal glands, etc.) are modern retrofits with no classical textual basis — a projection of Western endocrine science onto an older framework.</span>
+      </div>
+    </div>
+    <div>
+      <p class="chakra-section-head">Psychology suggests</p>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Symbolic</span>
+        <span class="distinction-text">Carl Jung noted structural parallels between chakra symbolism and individuation stages — the chakras may describe a universal archetypal progression of psychological development, independent of their metaphysical status.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Symbolic</span>
+        <span class="distinction-text">Somatic therapists (Peter Levine, Bessel van der Kolk) work with body-held emotional patterns that map loosely onto chakra territories — suggesting the body stores experience in region-specific ways.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Symbolic</span>
+        <span class="distinction-text">The framework provides a language for mapping inner experience. Its clinical value may lie in providing structure and narrative for psychological processes that are otherwise difficult to articulate.</span>
+      </div>
+      <p class="chakra-section-head" style="margin-top:2rem">What remains open</p>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Open</span>
+        <span class="distinction-text">The hard problem of consciousness — the nature of subjective experience — remains unsolved by science. The claim that subtle energy systems exist in dimensions not accessible to current instruments is unfalsifiable in the technical sense, which means it is neither proved nor disproved.</span>
+      </div>
+      <div class="distinction-row">
+        <span class="distinction-badge badge-symbolic">Open</span>
+        <span class="distinction-text">Thousands of practitioners across cultures report consistent experiential phenomena during deep meditation that correspond to classical chakra descriptions. This anecdotal consistency is noteworthy even if its interpretation remains contested.</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="reveal">
+    <p class="section-label">Common Questions</p>
+    <h2 class="section-title">Most misunderstood<br><em>concepts</em></h2>
+  </div>
+  <div class="faq-list reveal" id="faq-list"></div>
+</section>
+</HinduismLayout>
+
+<style>
+  :root {
+    --ink: #0a0812;
+    --gold: #c9a84c;
+    --gold-pale: #e8d5a3;
+    --cream: #f5efe6;
+    --muted: rgba(245,239,230,0.55);
+    --violet: #6b3fa0;
+    --indigo: #3d3b8e;
+    --deep: #130f1e;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--deep);
+    color: var(--cream);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+  }
+  /* Custom cursor */
+  #cursor {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    position: fixed; z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: transform 0.1s, width 0.3s, height 0.3s, opacity 0.3s;
+    mix-blend-mode: screen;
+  }
+  #cursor-ring {
+    width: 32px; height: 32px;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 50%;
+    position: fixed; z-index: 9998;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
+  }
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: linear-gradient(to bottom, rgba(10,8,18,0.9) 0%, transparent 100%);
+    backdrop-filter: blur(2px);
+  }
+  .nav-brand {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* HERO */
+  #hero {
+    position: relative;
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  #hero-canvas {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+  }
+  .hero-content {
+    position: relative; z-index: 10;
+    text-align: center;
+    max-width: 760px;
+    padding: 0 2rem;
+  }
+  .devanagari-title {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    color: var(--gold);
+    line-height: 1.1;
+    opacity: 0;
+    transform: translateY(30px);
+    text-shadow: 0 0 60px rgba(201,168,76,0.3);
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-style: italic;
+    color: var(--gold-pale);
+    margin-top: 0.5rem;
+    opacity: 0;
+    letter-spacing: 0.08em;
+  }
+  .hero-tagline {
+    font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.5);
+    margin-top: 2.5rem;
+    opacity: 0;
+    line-height: 2;
+  }
+  .hero-btns {
+    display: flex; gap: 1rem; justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    opacity: 0;
+  }
+  .btn-primary, .btn-ghost {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.35s;
+    display: inline-block;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--ink);
+    border: 1px solid var(--gold);
+    font-weight: 600;
+  }
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--gold);
+    box-shadow: 0 0 30px rgba(201,168,76,0.2);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(245,239,230,0.2);
+  }
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .scroll-indicator {
+    position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    opacity: 0;
+    z-index: 10;
+  }
+  .scroll-indicator span {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.4);
+  }
+  .scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.2); }
+  }
+
+  /* SECTIONS */
+  section {
+    position: relative;
+    padding: 7rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+  }
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--cream);
+    margin-bottom: 2rem;
+  }
+  h2.section-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .prose {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    line-height: 1.9;
+    color: rgba(245,239,230,0.75);
+    max-width: 700px;
+  }
+  .prose + .prose { margin-top: 1.5rem; }
+  .prose strong { color: var(--gold-pale); font-weight: 600; }
+  .divider {
+    width: 60px; height: 1px;
+    background: var(--gold);
+    margin: 3rem 0;
+    opacity: 0.4;
+  }
+
+  /* INTRO GRID */
+  .intro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5px;
+    margin-top: 4rem;
+    background: rgba(201,168,76,0.08);
+  }
+  .intro-card {
+    background: var(--deep);
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(201,168,76,0.1);
+    transition: border-color 0.4s, background 0.4s;
+  }
+  .intro-card:hover {
+    border-color: rgba(201,168,76,0.35);
+    background: rgba(107,63,160,0.08);
+  }
+  .intro-card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    display: block;
+    font-family: 'Noto Serif Devanagari', serif;
+    color: var(--gold);
+  }
+  .intro-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.75rem;
+  }
+  .intro-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(245,239,230,0.55);
+  }
+
+  /* SCRIPTURE SECTION */
+  #scriptures { background: none; }
+  #scriptures > * { max-width: 1200px; margin-left: auto; margin-right: auto; }
+  .scripture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .scripture-card {
+    border-left: 2px solid var(--gold);
+    padding: 1.8rem 2rem;
+    background: rgba(201,168,76,0.04);
+    transition: background 0.3s;
+  }
+  .scripture-card:hover { background: rgba(201,168,76,0.08); }
+  .scripture-name {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 1rem;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .scripture-era {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.35);
+    margin-bottom: 1rem;
+  }
+  .scripture-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: rgba(245,239,230,0.65);
+  }
+  .scripture-quote {
+    font-style: italic;
+    color: var(--gold-pale) !important;
+    font-size: 1.05rem !important;
+    margin-bottom: 0.8rem;
+    border-bottom: none;
+  }
+
+  /* CHAKRA EXPLORER */
+  #chakras { padding-bottom: 2rem; }
+  .chakra-nav {
+    display: flex;
+    gap: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .chakra-nav::-webkit-scrollbar { display: none; }
+  .chakra-tab {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.35);
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.3s;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .chakra-tab:hover { color: rgba(245,239,230,0.7); }
+  .chakra-tab.active {
+    color: var(--cream);
+    border-bottom-color: var(--gold);
+  }
+  .chakra-panel { display: none; padding-top: 3rem; }
+  .chakra-panel.active { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+  @media (max-width: 768px) { .chakra-panel.active { grid-template-columns: 1fr; } }
+  .chakra-visual {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 2rem; position: sticky; top: 6rem;
+  }
+  .chakra-orb-wrap { position: relative; }
+  .chakra-orb {
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 3.5rem;
+    position: relative;
+    animation: orbPulse 4s ease-in-out infinite;
+  }
+  @keyframes orbPulse {
+    0%, 100% { transform: scale(1); box-shadow: var(--orb-shadow); }
+    50% { transform: scale(1.04); box-shadow: var(--orb-shadow-lg); }
+  }
+  .chakra-sanskrit {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 2rem;
+    color: var(--gold);
+    text-align: center;
+  }
+  .chakra-bija {
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.4);
+    text-align: center;
+  }
+  .chakra-attrs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .chakra-attr {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 0.75rem 1rem;
+    border-radius: 2px;
+  }
+  .chakra-attr-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(245,239,230,0.3);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .chakra-attr-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: var(--cream);
+  }
+  .chakra-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--cream);
+    margin-bottom: 0.25rem;
+  }
+  .chakra-info .chakra-meaning {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-pale);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .chakra-section-head {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 2rem 0 0.75rem;
+    opacity: 0.7;
+  }
+  .chakra-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: rgba(245,239,230,0.7);
+  }
+  .tag-list {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid rgba(201,168,76,0.2);
+    color: rgba(245,239,230,0.55);
+    border-radius: 1px;
+  }
+  .mantra-box {
+    border: 1px solid rgba(201,168,76,0.25);
+    background: rgba(201,168,76,0.05);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .mantra-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(201,168,76,0.55);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .mantra-text {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .mantra-roman {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-pale);
+    font-size: 1rem;
+  }
+
+  /* KUNDALINI */
+  .kundalini-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  @media (max-width: 768px) { .kundalini-wrap { grid-template-columns: 1fr; gap: 2.5rem; } }
+  .nadi-diagram {
+    position: relative;
+    height: 420px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nadi-diagram svg { width: 100%; height: 100%; }
+
+  /* ACTIVATION */
+  .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: rgba(201,168,76,0.08);
+    margin-top: 3rem;
+  }
+  .practice-card {
+    background: var(--deep);
+    padding: 2rem 1.5rem;
+    border: 1px solid rgba(201,168,76,0.08);
+    transition: background 0.3s;
+    text-align: center;
+  }
+  .practice-card:hover { background: rgba(201,168,76,0.04); }
+  .practice-icon {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 2rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .practice-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .practice-card p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(245,239,230,0.5);
+  }
+
+  /* SCIENCE */
+  .dual-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 768px) { .dual-col { grid-template-columns: 1fr; } }
+  .distinction-row {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(201,168,76,0.08);
+    align-items: flex-start;
+  }
+  .distinction-badge {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 1px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .badge-spiritual {
+    background: rgba(107,63,160,0.25);
+    color: #c8a2e8;
+    border: 1px solid rgba(107,63,160,0.35);
+  }
+  .badge-science {
+    background: rgba(61,59,142,0.25);
+    color: #a2aee8;
+    border: 1px solid rgba(61,59,142,0.35);
+  }
+  .badge-symbolic {
+    background: rgba(201,168,76,0.15);
+    color: var(--gold-pale);
+    border: 1px solid rgba(201,168,76,0.25);
+  }
+  .distinction-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(245,239,230,0.65);
+  }
+
+  /* FAQ */
+  .faq-list { margin-top: 3rem; }
+  .faq-item {
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+    overflow: hidden;
+  }
+  .faq-q {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--cream);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: color 0.3s;
+  }
+  .faq-q:hover { color: var(--gold-pale); }
+  .faq-q .faq-arrow {
+    color: var(--gold);
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+  }
+  .faq-q.open .faq-arrow { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .faq-a-inner {
+    padding-bottom: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: rgba(245,239,230,0.6);
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .footer-sanskrit {
+    font-family: 'Noto Serif Devanagari', serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .footer-translation {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: rgba(245,239,230,0.35);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .footer-note {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: rgba(245,239,230,0.25);
+    line-height: 2;
+  }
+
+  /* BG GRADIENT OVERLAY */
+  .bg-orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(120px);
+    opacity: 0.06;
+  }
+  .bg-orb-1 { width: 500px; height: 500px; background: #6b3fa0; top: 20%; left: -10%; }
+  .bg-orb-2 { width: 400px; height: 400px; background: #c9a84c; bottom: 10%; right: -5%; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  /* Full-width section backgrounds */
+  .section-full {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 7rem calc(50vw - 600px);
+  }
+  @media (max-width: 1240px) { .section-full { padding: 7rem 2rem; } }
+  .bg-dark-1 { background: rgba(107,63,160,0.05); }
+  .bg-dark-2 { background: rgba(201,168,76,0.03); }
+</style>
+
+<script>
+// ─── CURSOR ───────────────────────────────────
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function raf() {
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(raf);
+})();
+
+// ─── HERO THREE.JS ───────────────────────────
+(function initHero() {
+  const canvas = document.getElementById('hero-canvas');
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(0, 0, 5);
+
+  // Ambient
+  scene.add(new THREE.AmbientLight(0x2a1a40, 1.5));
+  const dirLight = new THREE.DirectionalLight(0xc9a84c, 0.8);
+  dirLight.position.set(2, 3, 3);
+  scene.add(dirLight);
+
+  // Chakra data
+  const cData = [
+    { color: 0xff3333, y: -2.4, label: 'Mūlādhāra' },
+    { color: 0xff6600, y: -1.6, label: 'Svādhiṣṭhāna' },
+    { color: 0xffcc00, y: -0.8, label: 'Maṇipūra' },
+    { color: 0x33cc55, y: 0,    label: 'Anāhata' },
+    { color: 0x3399ff, y: 0.8,  label: 'Viśuddha' },
+    { color: 0x7755dd, y: 1.6,  label: 'Ājñā' },
+    { color: 0xc9a84c, y: 2.4,  label: 'Sahasrāra' },
+  ];
+
+  const chakraMeshes = [];
+  cData.forEach(d => {
+    const geo = new THREE.SphereGeometry(0.18, 32, 32);
+    const mat = new THREE.MeshPhongMaterial({
+      color: d.color, emissive: d.color, emissiveIntensity: 0.4,
+      transparent: true, opacity: 0.85
+    });
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.position.set(0, d.y, 0);
+    scene.add(mesh);
+    chakraMeshes.push(mesh);
+
+    // Aura ring
+    const ringGeo = new THREE.TorusGeometry(0.35, 0.015, 8, 64);
+    const ringMat = new THREE.MeshBasicMaterial({ color: d.color, transparent: true, opacity: 0.3 });
+    const ring3 = new THREE.Mesh(ringGeo, ringMat);
+    ring3.position.copy(mesh.position);
+    ring3.rotation.x = Math.PI / 2;
+    scene.add(ring3);
+    chakraMeshes.push(ring3);
+  });
+
+  // Spine line
+  const spinePoints = [new THREE.Vector3(0,-2.7,0), new THREE.Vector3(0,2.7,0)];
+  const spineGeo = new THREE.BufferGeometry().setFromPoints(spinePoints);
+  const spineMat = new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.15 });
+  scene.add(new THREE.Line(spineGeo, spineMat));
+
+  // Particles
+  const N = 700;
+  const pPos = new Float32Array(N * 3);
+  for (let i = 0; i < N; i++) {
+    pPos[i*3]   = (Math.random()-0.5)*10;
+    pPos[i*3+1] = (Math.random()-0.5)*8;
+    pPos[i*3+2] = (Math.random()-0.5)*8 - 2;
+  }
+  const pGeo = new THREE.BufferGeometry();
+  pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+  const pMat = new THREE.PointsMaterial({ color: 0xc9a84c, size: 0.015, transparent: true, opacity: 0.35 });
+  scene.add(new THREE.Points(pGeo, pMat));
+
+  // Sacred geometry — icosahedron wireframe
+  const iGeo = new THREE.IcosahedronGeometry(3, 1);
+  const iMat = new THREE.MeshBasicMaterial({ color: 0x6b3fa0, wireframe: true, transparent: true, opacity: 0.04 });
+  const ico = new THREE.Mesh(iGeo, iMat);
+  scene.add(ico);
+
+  let mouseX = 0, mouseY = 0;
+  document.addEventListener('mousemove', e => {
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  let t = 0;
+  function animate() {
+    requestAnimationFrame(animate);
+    t += 0.008;
+    camera.position.x += (mouseX * 0.8 - camera.position.x) * 0.04;
+    camera.position.y += (-mouseY * 0.4 - camera.position.y) * 0.04;
+    camera.lookAt(0, 0, 0);
+    ico.rotation.y = t * 0.1;
+    ico.rotation.x = t * 0.05;
+    cData.forEach((d, i) => {
+      const mesh = chakraMeshes[i * 2];
+      const ring3 = chakraMeshes[i * 2 + 1];
+      const pulse = 1 + Math.sin(t * 1.5 + i * 0.8) * 0.12;
+      mesh.scale.setScalar(pulse);
+      ring3.scale.setScalar(pulse * 1.05);
+      ring3.rotation.y = t * 0.5 + i;
+      mesh.material.emissiveIntensity = 0.35 + Math.sin(t * 2 + i) * 0.15;
+    });
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  // Animate hero text in
+  setTimeout(() => {
+    const el = (id, delay) => {
+      const e = document.getElementById(id);
+      if (!e) return;
+      e.style.transition = `opacity 1.2s ${delay}s ease, transform 1.2s ${delay}s ease`;
+      e.style.opacity = 1;
+      e.style.transform = 'translateY(0)';
+    };
+    el('hero-title', 0.3);
+    el('hero-sub', 0.7);
+    el('hero-tagline', 1.1);
+    el('hero-btns', 1.5);
+    document.getElementById('scroll-ind').style.transition = 'opacity 1s 2.2s ease';
+    document.getElementById('scroll-ind').style.opacity = 1;
+  }, 400);
+})();
+
+// ─── CHAKRA DATA ─────────────────────────────
+const chakras = [
+  {
+    name: 'Mūlādhāra', devanagari: 'मूलाधार', meaning: 'Root Support — mūla (root) + ādhāra (foundation)',
+    location: 'Perineum, base of spine', element: 'Earth (Pṛthivī)', color: '#e85555',
+    bija: 'लं', bijaRoman: 'Laṃ', petals: '4 petals, deep crimson',
+    deity: 'Brahmā (Śakti: Ḍākinī)', yantra: 'Yellow square', number: 1,
+    attrs: { element: 'Earth', color: 'Red / Crimson', petals: '4', bīja: 'Laṃ', deity: 'Brahmā', location: 'Perineum' },
+    psychological: "Mūlādhāra governs our most fundamental sense of safety, stability, and embodiment. Its psychological domain is primal survival — the instinctual need for shelter, food, grounding, and belonging. When Yogic texts describe its 'blockage,' they are pointing to chronic anxiety, dissociation from the body, inability to feel at home in the world, or patterns of scarcity thinking.",
+    spiritual: "Spiritually, Mūlādhāra represents the point where pure consciousness becomes individuated within matter. Kuṇḍalinī Śakti resides here in its dormant form. The Ṣaṭ-Cakra-Nirūpaṇa (verse 4-13) describes this chakra as containing the svayambhu liṅga — an internal subtle form of Śiva — around which the serpent goddess is coiled. This imagery conveys the meeting of masculine and feminine cosmic principles at the most fundamental level of embodied existence.",
+    physical: "Associated with the legs, bones, large intestine, and adrenal glands. Sensations of heat or vibration at the perineum are classically reported during deep meditation — understood in Yogic physiology as prāṇic activation rather than physiological sensation.",
+    meditation: "Sit in a stable posture (Siddhāsana). Fix awareness at the perineum. Mentally repeat the bīja mantra 'Laṃ' in coordination with the exhale. The Sat-Cakra-Nirupana recommends visualizing a four-petaled red lotus with a yellow earth-square at its center. Practice Mūla Bandha — subtle root lock — to direct prāṇa upward.",
+    blockage: "Chronic fear, inability to commit, financial anxiety, disconnection from the body, feeling perpetually unsafe, eating disorders rooted in scarcity, or conversely, extreme materialism and hoarding as compensatory grounding.",
+    awakening: "Classical texts describe heat at the base of the spine, increased physical vitality, a sense of profound rootedness in the present moment, and in advanced stages, activation of the kuṇḍalinī that manifests as intense heat, kriyas (spontaneous movements), and altered states of consciousness.",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 4: 'There is a lotus of four petals in the region of the mūlādhāra, bright as the young sun, and of a deep crimson hue.' The text specifies the petals bear the Sanskrit letters vaṃ, śaṃ, ṣaṃ, and saṃ.",
+  },
+  {
+    name: 'Svādhiṣṭhāna', devanagari: 'स्वाधिष्ठान', meaning: 'One\'s Own Abode — sva (one\'s own) + adhiṣṭhāna (dwelling)',
+    location: 'Sacrum, lower abdomen', element: 'Water (Āpas)', color: '#e87a20',
+    bija: 'वं', bijaRoman: 'Vaṃ', petals: '6 petals, vermillion',
+    deity: 'Viṣṇu (Śakti: Rākinī)', yantra: 'White lunar crescent', number: 2,
+    attrs: { element: 'Water', color: 'Orange / Vermillion', petals: '6', bīja: 'Vaṃ', deity: 'Viṣṇu', location: 'Sacrum' },
+    psychological: "Svādhiṣṭhāna governs the domain of emotions, creativity, desire, pleasure, and relational dynamics. It is the seat of unconscious patterning — the Yogic equivalent of what depth psychology would call the unconscious, where ancestral patterns, saṃskāras, and early emotional imprints reside. Its element water reflects the fluid, shifting, difficult-to-hold quality of emotional life.",
+    spiritual: "This chakra is associated with the water element and its quality of flow and adaptability. Spiritually, it represents the movement from mere survival (Mūlādhāra) to the emergence of personal identity and desire. The six petals bear letters that correspond to sounds produced in the lower abdominal region in Sanskrit phonology. Viṣṇu as presiding deity suggests the principle of preservation — holding the continuity of experience across time.",
+    physical: "Associated with the reproductive organs, kidneys, urinary bladder, and the sacral vertebrae. The water element governs all fluids in the body including lymph, blood plasma, and cerebrospinal fluid.",
+    meditation: "Meditate on the lower abdomen or sacrum. Visualize a six-petaled orange-red lotus with a white crescent moon at its center, the symbol of water. Repeat Vaṃ. The practice of Māla (garland) japa — repeating a mantra 108 times — is particularly associated with this chakra for working with emotional patterns.",
+    blockage: "Emotional rigidity, repressed creativity, compulsive pleasure-seeking or addiction, relationship codependency, guilt around sexuality or pleasure, inability to feel emotions, or alternatively, emotional flooding with no capacity for containment.",
+    awakening: "Yogic texts describe creative expansion, heightened emotional sensitivity without reactivity, fluid movement in relationships, and emergence of deeper layers of unconscious material that can be disorienting before becoming liberating.",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 14: 'Within this lotus is the region of water, bright as lightning... the presiding deity is Viṣṇu who grants boons.' The association with Viṣṇu — preserver of the world — reflects this chakra's domain of sustaining relational life.",
+  },
+  {
+    name: 'Maṇipūra', devanagari: 'मणिपूर', meaning: 'Jewel City — maṇi (jewel) + pūra (city/fullness)',
+    location: 'Solar plexus, navel region', element: 'Fire (Agni)', color: '#f5c200',
+    bija: 'रं', bijaRoman: 'Raṃ', petals: '10 petals, blue-grey like storm clouds',
+    deity: 'Rudra (Śakti: Lākinī)', yantra: 'Red inverted triangle', number: 3,
+    attrs: { element: 'Fire', color: 'Yellow / Gold', petals: '10', bīja: 'Raṃ', deity: 'Rudra', location: 'Solar plexus' },
+    psychological: "Maṇipūra is the seat of the ego-self, personal power, willpower, and agency. Its fire element reflects the transformative quality of digestion — both literal (it governs the digestive fire, agni) and metaphorical (the capacity to transform experience into wisdom). It governs self-esteem, shame, confidence, and the drive toward mastery.",
+    spiritual: "Named the 'city of jewels,' this chakra is associated with the inner brilliance that emerges when the individual will aligns with higher purpose. The inverted fire triangle in its yantra signifies purification — fire burns upward, transmuting gross matter into subtle energy. The ten petals correspond to ten prāṇas, and the presiding deity Rudra (a fierce form of Śiva) governs dissolution of ego-constructs.",
+    physical: "Governs the digestive system, liver, pancreas, spleen, stomach, and the metabolic regulation of the entire body. Agni — digestive fire — is the central concept of both chakra theory and Āyurveda, suggesting deep structural parallels between the two systems.",
+    meditation: "Meditate at the navel center. Visualize a ten-petaled yellow lotus with a red downward-pointing triangle — the symbol of fire transformation. Kapalabhāti prāṇāyāma (skull-shining breath) is the primary practice for activating Maṇipūra, generating internal heat (tapas). Repeat Raṃ.",
+    blockage: "Shame, powerlessness, aggression, victim mentality, compulsive control, digestive disorders correlated with chronic stress, or alternatively, manipulative use of power over others as compensatory overactivity.",
+    awakening: "A stable sense of inner power that does not require external validation; the capacity to act decisively without aggression; what is often called 'being in one's center.' Advanced meditators report intense internal heat and light at the navel in this chakra's activation.",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 19: 'In the region of the navel is the lotus of ten petals, of the color of heavy rain clouds... the region of fire, triangular in form and shining like the rising sun.'",
+  },
+  {
+    name: 'Anāhata', devanagari: 'अनाहत', meaning: 'Unstruck Sound — anāhata (that which has not been struck)',
+    location: 'Heart center, thoracic spine', element: 'Air (Vāyu)', color: '#32c850',
+    bija: 'यं', bijaRoman: 'Yaṃ', petals: '12 petals, deep red like the bandhūka flower',
+    deity: 'Īśvara / Śiva (Śakti: Kākinī)', yantra: 'Two intersecting triangles (Star of David / Śatkona)', number: 4,
+    attrs: { element: 'Air', color: 'Green / Smoky grey', petals: '12', bīja: 'Yaṃ', deity: 'Īśvara', location: 'Heart center' },
+    psychological: "Anāhata governs love — not romantic or personal love specifically, but the quality of unconditional openness that makes love of any kind possible. It is the bridge between the lower three chakras (personal, embodied, self-focused) and the upper three (transpersonal, spiritual, universal). Air as its element suggests the quality of spaciousness and freedom within which love can arise.",
+    spiritual: "The name anāhata refers to a mystical inner sound that exists without any physical cause — the primordial 'Om' or cosmic vibration that can be heard by yogis in deep meditation. The śatkona yantra (two interlocked triangles) represents the union of Śiva and Śakti, consciousness and energy, the masculine and feminine principles in perfect equilibrium. Anāhata is considered the abode of the individual ātman (jīvātman).",
+    physical: "Associated with the heart, lungs, arms, and the thymus gland. The breath connection (air element) and heart coherence research (HeartMath Institute) represents one of the more credible contemporary parallels to traditional claims — though causality remains complex.",
+    meditation: "Sit with hands in jñāna mudrā (index finger and thumb touching). Bring awareness to the heart center. On each inhale, feel expansion; on each exhale, release. Visualize a twelve-petaled lotus of deep red. The Haṃsa (swan) and the antelopes in traditional imagery of this chakra represent the discriminating mind and the lightness of spirit. Loving-kindness meditation (Mettā) from Buddhist tradition also works with this center.",
+    blockage: "Grief unprocessed, inability to give or receive love, defensive emotional armoring, codependency or emotional merger (where the heart's need for others becomes its prison), loneliness, bitterness.",
+    awakening: "The opening of Anāhata is traditionally described as the most significant threshold in spiritual development — the point where the individual begins to genuinely experience the underlying unity of existence. Experiences include spontaneous compassion, perception of the sacred in ordinary reality, and hearing the inner anāhata sound.",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 22-27: 'In the pericarp of this lotus there is a śatkona (hexagon), and within it the Vāyu-bīja Yaṃ... beautiful as a bandhūka flower... Here is the abode of the Hamsa... where the jīvātman dwells.'",
+  },
+  {
+    name: 'Viśuddha', devanagari: 'विशुद्ध', meaning: 'Especially Pure — vi (especially) + śuddha (pure)',
+    location: 'Throat, cervical spine', element: 'Space/Ether (Ākāśa)', color: '#3296ff',
+    bija: 'हं', bijaRoman: 'Haṃ', petals: '16 petals, smoky purple',
+    deity: 'Sadāśiva (Śakti: Śākinī)', yantra: 'White circle within triangle', number: 5,
+    attrs: { element: 'Space / Ākāśa', color: 'Blue / Smoky purple', petals: '16', bīja: 'Haṃ', deity: 'Sadāśiva', location: 'Throat' },
+    psychological: "Viśuddha governs communication, expression, truth-speaking, and the integration of all sensory experience into coherent meaning. The 16 petals correspond to the 16 Sanskrit vowels — the full spectrum of voiced sound. Psychologically, this chakra is associated with the capacity to speak one's authentic truth rather than performing an expected social self.",
+    spiritual: "The element of ākāśa (space/ether) at Viśuddha marks the transition from the five gross elements (earth, water, fire, air, space) to the more subtle tattvas of mind. This makes Viśuddha a threshold. In advanced Yogic states, meditators describe hearing not only the anāhata sound but the complete spectrum of mantric sound emerging from this center. Viśuddha is the center where poison can be transmuted — the Śiva mythology of drinking the cosmic poison (Halāhala) and holding it in the throat is directly associated with this chakra.",
+    physical: "Throat, thyroid and parathyroid glands, cervical vertebrae, jaw, and ears. Āyurveda associates the throat with the expression of the individual's particular constitutional nature (prakṛti).",
+    meditation: "Visualize a sixteen-petaled smoky purple lotus. Within it, a white circle containing a white elephant. The bīja Haṃ reverberates in the throat. Ujjāyī prāṇāyāma — ocean-breath created by slight constriction of the glottis — is the primary practice. Chanting (kīrtana) and mantra singing are powerful activators of Viśuddha.",
+    blockage: "Inability to speak truthfully, excessive talking as avoidance, social performance disconnected from inner reality, chronic throat issues in mind-body frameworks, difficulty listening, and creative blocks in self-expression.",
+    awakening: "When Viśuddha opens, there is a sense of words arising from a deeper place — communication becomes effortless and authentic. Advanced yogis describe the power of vāk (speech) becoming efficacious: what is spoken tends to manifest.",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 28-31: 'In the throat is the Lotus called Viśuddha, which is pure... it is of a smoky purple hue, and has sixteen petals covered with the sixteen Sanskrit vowels.' The sixteen vowels represent the fullness of voiced expression.",
+  },
+  {
+    name: 'Ājñā', devanagari: 'आज्ञा', meaning: 'Command — ājñā (command, authority)',
+    location: 'Between the eyebrows, brain center', element: 'Mind (Manas)', color: '#7755dd',
+    bija: 'ॐ', bijaRoman: 'Oṃ', petals: '2 petals, white',
+    deity: 'Paramaśiva (Śakti: Hākinī)', yantra: 'Circle with downward triangle', number: 6,
+    attrs: { element: 'Mind / Manas', color: 'Indigo / White', petals: '2', bīja: 'Oṃ', deity: 'Paramaśiva', location: 'Third eye' },
+    psychological: "Ājñā transcends the five elements and governs pure mind — discrimination (viveka), intuition, and the witness consciousness that can observe without being identified with what is observed. The two petals are said to represent the two aspects of mind: rationality and intuition, or the two nāḍīs Iḍā and Piṅgalā merging into Suṣumnā at this point.",
+    spiritual: "Ājñā means 'command' — this is the center from which the guru's consciousness is said to transmit, and through which the advanced practitioner receives inner guidance. It is the seat of Vijñānamaya koṣa — the intellect sheath — and lies just below the transition to the causal body. The single-syllable bīja Oṃ reflects the dissolution of duality: there is no element, no form, only pure vibratory awareness.",
+    physical: "Associated with the pineal gland (the third eye of Descartes), the brain hemispheres, and the nervous system's integrative functions. The pineal-chakra connection is popular in modern wellness but was not a feature of classical texts — it is a 20th-century interpolation.",
+    meditation: "Traṭaka — steady gazing at a candle flame, eventually visualized at the ājñā point. Bhrāmarī prāṇāyāma (humming bee breath) creates resonance between the skull and the meditative focus. The practice of inner visualization (antar dhāraṇā) with focus at the brow center is among the most powerful methods, described in detail in the Vijñāna Bhairava Tantra.",
+    blockage: "Intellectual arrogance, over-reliance on reason at the expense of intuition (or vice versa), inability to hold paradox, dogmatic thinking, escapism into spiritual fantasy, persistent headaches or migraines in mind-body frameworks.",
+    awakening: "The Ājñā awakening is described in classical texts as a profound shift in the quality of perception — the meditator begins to see the underlying pattern in phenomena, experiences flashes of prescient awareness, and enters states of concentrated, effortless awareness (dhāraṇā merging into dhyāna).",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 32-35: 'Between the eyebrows is the Lotus Ājñā, like the moon, beautifully white. It has two petals, and is described as having the white Hakini for its deity... in its pericarp is the mantra Oṃ.' The whiteness denotes the transcendence of elemental color.",
+  },
+  {
+    name: 'Sahasrāra', devanagari: 'सहस्रार', meaning: 'Thousand-Petaled — sahasra (thousand) + āra (spoke/petal)',
+    location: 'Crown of the head, or above it', element: 'Pure Consciousness (Cit)', color: '#c9a84c',
+    bija: 'ॐ', bijaRoman: 'Oṃ / Silence', petals: '1000 petals, all colors',
+    deity: 'Paramaśiva-Śakti union', yantra: 'Full lotus of 1000 petals', number: 7,
+    attrs: { element: 'Pure Consciousness', color: 'Violet / Gold / All', petals: '1000', bīja: 'Oṃ / Silence', deity: 'Paramaśiva', location: 'Crown / above head' },
+    psychological: "Sahasrāra lies beyond the ordinary psychological categories applicable to the lower chakras. It represents the dissolution of individual psychological structures into pure awareness. From a depth psychology perspective, it corresponds to the complete transcendence of ego-identification — not ego destruction, but recognition of the ego as a functional pattern within a larger field of consciousness.",
+    spiritual: "Sahasrāra is not a chakra in the same category as the other six — the classical texts consistently distinguish it as the supreme state rather than another energy center. It is the destination of kuṇḍalinī's journey, where Śakti reunites with Śiva — where individual consciousness merges with universal consciousness (Paramācit). The thousand petals represent the infinite facets of pure awareness. This state is what Hindu traditions call samādhi, and specifically nirvikalpa samādhi — absorption without object, beyond thought.",
+    physical: "Associated with the cerebral cortex and the entire nervous system. Some interpret it as associated with the pituitary gland in modern wellness frameworks, though this too lacks classical textual support.",
+    meditation: "By classical definition, there is no 'technique' for Sahasrāra, because technique implies a practitioner doing something — and what is required is the cessation of the practitioner's effortful doing. The dissolution of the meditator into the meditation is Sahasrāra. Shunryu Suzuki's 'beginner's mind,' Ramana Maharshi's self-inquiry (Ātma-vichāra), and the Kaśmīr Śaiva concept of recognition (pratyabhijñā) all point to this same territory from different angles.",
+    blockage: "To 'block' Sahasrāra is simply to remain identified with limited individual consciousness — which is the ordinary human condition, not a dysfunction. The tradition's practical path is the progressive liberation from this identification through the journey up through all the preceding centers.",
+    awakening: "Described as mokṣa, mukti, nirvāṇa, samādhi — complete liberation from the mistaken identification of the self with the body, mind, and ego. The specific experience is said to be indescribable, which is why all scriptural accounts resort to negation (neti, neti — 'not this, not this') or metaphor (union of Śiva and Śakti, the river merging with the ocean).",
+    scripture: "Ṣaṭ-Cakra-Nirūpaṇa verse 40-49: 'Above all these, in the void beyond, is the Great Lotus of a thousand petals, brilliant as the full moon... it has no root, it is eternal... Here dwells Śiva, in union with Śakti, the supreme bliss beyond all description.'",
+  }
+];
+
+// Build chakra panels
+const panelsContainer = document.getElementById('chakra-panels');
+chakras.forEach((c, i) => {
+  const glowColor = c.color + '40';
+  const div = document.createElement('div');
+  div.className = 'chakra-panel' + (i === 0 ? ' active' : '');
+  div.id = `panel-${i}`;
+  div.innerHTML = `
+    <div class="chakra-visual">
+      <div class="chakra-orb-wrap">
+        <div class="chakra-orb" style="
+          background: radial-gradient(circle at 35% 35%, ${c.color}cc, ${c.color}44 60%, transparent);
+          box-shadow: 0 0 40px ${c.color}55, 0 0 80px ${c.color}22, inset 0 0 30px rgba(255,255,255,0.08);
+          --orb-shadow: 0 0 40px ${c.color}55, 0 0 80px ${c.color}22;
+          --orb-shadow-lg: 0 0 60px ${c.color}77, 0 0 120px ${c.color}33;
+        ">${c.bija}</div>
+      </div>
+      <div class="chakra-sanskrit">${c.devanagari}</div>
+      <div class="chakra-bija">Bīja: ${c.bijaRoman} &nbsp;·&nbsp; ${c.petals}</div>
+      <div class="chakra-attrs">
+        ${Object.entries(c.attrs).map(([k,v]) => `
+          <div class="chakra-attr">
+            <span class="chakra-attr-label">${k}</span>
+            <span class="chakra-attr-val">${v}</span>
+          </div>
+        `).join('')}
+      </div>
+      <div class="mantra-box">
+        <span class="mantra-label">Bīja Mantra</span>
+        <span class="mantra-text">${c.bija}</span>
+        <span class="mantra-roman">${c.bijaRoman}</span>
+      </div>
+    </div>
+    <div class="chakra-info">
+      <h3>${c.name}</h3>
+      <div class="chakra-meaning">${c.meaning}</div>
+      <p class="chakra-section-head">Psychological Domain</p>
+      <p class="chakra-text">${c.psychological}</p>
+      <p class="chakra-section-head">Spiritual Significance</p>
+      <p class="chakra-text">${c.spiritual}</p>
+      <p class="chakra-section-head">Physical Associations</p>
+      <p class="chakra-text">${c.physical}</p>
+      <p class="chakra-section-head">Meditation Practice</p>
+      <p class="chakra-text">${c.meditation}</p>
+      <p class="chakra-section-head">Signs of Imbalance</p>
+      <p class="chakra-text">${c.blockage}</p>
+      <p class="chakra-section-head">Awakening Experiences</p>
+      <p class="chakra-text">${c.awakening}</p>
+      <p class="chakra-section-head">Scriptural Reference</p>
+      <p class="chakra-text" style="font-style:italic;color:rgba(232,213,163,0.7)">${c.scripture}</p>
+    </div>
+  `;
+  panelsContainer.appendChild(div);
+});
+
+// Tab switching
+document.querySelectorAll('.chakra-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const idx = tab.dataset.chakra;
+    document.querySelectorAll('.chakra-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.chakra-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(`panel-${idx}`).classList.add('active');
+  });
+});
+
+// ─── FAQ ──────────────────────────────────────
+const faqs = [
+  { q: 'Are chakras scientifically proven?', a: 'No — not as physical structures. No peer-reviewed study has identified anatomical correlates for chakras. However, this does not mean they are without value. The framework describes subjective experiential phenomena that practitioners across cultures and centuries have consistently reported. Science and contemplative phenomenology are answering different questions with different methods. What neuroscience has confirmed is that sustained meditation produces measurable neurological changes — the causal framework for why remains debated.' },
+  { q: 'Is the seven-chakra system the only traditional system?', a: 'No. Different texts describe different numbers. The Yoga Yājñavalkya mentions 14 chakras. Some Tantric texts describe 4, 5, 6, or 9. The Tibetan Buddhist vajra body system has a somewhat analogous but distinct structure. Even within the Tantric tradition, different śākhās (branches) use different frameworks. The seven-chakra rainbow model familiar to Western audiences is largely a codification from the Ṣaṭ-Cakra-Nirūpaṇa and its popularization through early 20th-century Theosophical writers like Charles Leadbeater.' },
+  { q: 'Can you forcibly awaken kundalini through intensive practice?', a: 'Traditional texts strongly caution against this. The Yoga Kuṇḍalinī Upaniṣad, Swami Sivananda\'s writings, and modern teachers like Georg Feuerstein all emphasize that kuṇḍalinī awakening without adequate preparation and guidance can produce what contemporary literature calls "kuṇḍalinī syndrome" — a spectrum of disorienting psychological, somatic, and perceptual experiences that can range from uncomfortable to deeply destabilizing. The classical prescription is years of foundational practice (yama-niyama, āsana, prāṇāyāma) before advanced kuṇḍalinī work.' },
+  { q: 'Do chakra colors have ancient scriptural authority?', a: 'Mostly, though the modern rainbow correspondence is partially modern. The Ṣaṭ-Cakra-Nirūpaṇa describes specific colors for each chakra, but they differ from the popular rainbow system. For example, Maṇipūra is described as "blue-grey like storm clouds" (not yellow), and Viśuddha as "smoky purple" (not bright blue). The clean rainbow spectrum mapping (red–orange–yellow–green–blue–indigo–violet) appears to be a 20th-century systematization.' },
+  { q: 'What is the difference between chakra meditation and ordinary mindfulness?', a: 'Mindfulness practice typically trains broad, non-judgmental awareness of present-moment experience. Chakra meditation involves directed concentration (dhāraṇā) on specific energetic centers, their mantras, yantras, and associated qualities. Classical Yogic texts place chakra practices in the dhāraṇā-dhyāna tier — the sixth and seventh limbs of Patañjali\'s eight-limbed Yoga — which presuppose a stable foundation in āsana and prāṇāyāma. They are more targeted, more technically demanding, and classically require more preparation than open-awareness mindfulness.' },
+  { q: 'Is it necessary to be Hindu to work with chakras?', a: 'The practices are technically accessible outside their religious context — just as Japanese Zen techniques are practiced globally outside their Buddhist context. However, divorcing practices from their source tradition involves tradeoffs: the ethical framework (yama-niyama), the cosmological understanding (understanding what the practices are actually doing), and the relational transmission (paramparā) are all lost in decontextualized versions. Practices work differently — and carry different risks — without these safeguards. Engaging with the tradition with genuine respect and intellectual honesty is recommended.' },
+];
+const faqList = document.getElementById('faq-list');
+faqs.forEach(f => {
+  const item = document.createElement('div'); item.className = 'faq-item';
+  item.innerHTML = `
+    <button class="faq-q"><span>${f.q}</span><span class="faq-arrow">+</span></button>
+    <div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>
+  `;
+  faqList.appendChild(item);
+  const btn = item.querySelector('.faq-q');
+  const ans = item.querySelector('.faq-a');
+  btn.addEventListener('click', () => {
+    const open = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling.style.maxHeight = '0';
+    });
+    if (!open) {
+      btn.classList.add('open');
+      ans.style.maxHeight = ans.scrollHeight + 'px';
+    }
+  });
+});
+
+// ─── BODY MAP TOOLTIP ────────────────────────
+const ttData = [
+  { name:'Mūlādhāra', dev:'मूलाधार', color:'#ff5555', location:'Perineum — base of spine', domain:'Survival, grounding, safety, embodiment, basic trust', element:'Element: Earth (Pṛthivī) · Bīja: Laṃ' },
+  { name:'Svādhiṣṭhāna', dev:'स्वाधिष्ठान', color:'#ff8800', location:'Sacrum — lower abdomen', domain:'Emotions, creativity, desire, pleasure, relational dynamics', element:'Element: Water (Āpas) · Bīja: Vaṃ' },
+  { name:'Maṇipūra', dev:'मणिपूर', color:'#ffc800', location:'Solar plexus — navel region', domain:'Personal power, will, self-esteem, transformation, digestion', element:'Element: Fire (Agni) · Bīja: Raṃ' },
+  { name:'Anāhata', dev:'अनाहत', color:'#32c850', location:'Heart center — thoracic spine', domain:'Love, compassion, spaciousness, bridge between body and spirit', element:'Element: Air (Vāyu) · Bīja: Yaṃ' },
+  { name:'Viśuddha', dev:'विशुद्ध', color:'#3296ff', location:'Throat — cervical spine', domain:'Communication, authentic expression, integration, inner truth', element:'Element: Ether (Ākāśa) · Bīja: Haṃ' },
+  { name:'Ājñā', dev:'आज्ञा', color:'#7755dd', location:'Between the eyebrows', domain:'Intuition, discrimination, witness consciousness, inner command', element:'Element: Mind (Manas) · Bīja: Oṃ' },
+  { name:'Sahasrāra', dev:'सहस्रार', color:'#c9a84c', location:'Crown of the head', domain:'Pure consciousness, unity, liberation, union of Śiva and Śakti', element:'Beyond elements · Oṃ / Silence' },
+];
+const tooltip = document.getElementById('chakra-tooltip');
+const ttName = document.getElementById('tt-name');
+const ttDev = document.getElementById('tt-devanagari');
+const ttLoc = document.getElementById('tt-location');
+const ttDomain = document.getElementById('tt-domain');
+const ttEl = document.getElementById('tt-element');
+
+document.querySelectorAll('.chakra-pt').forEach(pt => {
+  pt.style.cursor = 'pointer';
+  pt.addEventListener('mouseenter', function(e) {
+    const idx = parseInt(this.dataset.idx);
+    const d = ttData[idx];
+    ttName.textContent = d.name;
+    ttName.style.color = d.color;
+    ttDev.textContent = d.dev;
+    ttDev.style.color = d.color;
+    ttLoc.textContent = d.location;
+    ttDomain.textContent = d.domain;
+    ttEl.textContent = d.element;
+    tooltip.style.display = 'block';
+  });
+  pt.addEventListener('mousemove', function(e) {
+    const rect = document.getElementById('body-map-container').getBoundingClientRect();
+    let x = e.clientX - rect.left + 20;
+    let y = e.clientY - rect.top + 20;
+    if (x + 300 > rect.width) x = e.clientX - rect.left - 300;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  });
+  pt.addEventListener('mouseleave', function() {
+    tooltip.style.display = 'none';
+  });
+  pt.addEventListener('click', function() {
+    const idx = parseInt(this.dataset.idx);
+    document.querySelectorAll('.chakra-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.chakra-panel').forEach(p => p.classList.remove('active'));
+    document.querySelector('.chakra-tab[data-chakra="'+idx+'"]').classList.add('active');
+    document.getElementById('panel-'+idx).classList.add('active');
+    document.getElementById('chakras').scrollIntoView({ behavior:'smooth' });
+  });
+});
+
+// ─── SCROLL REVEAL ────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); observer.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>

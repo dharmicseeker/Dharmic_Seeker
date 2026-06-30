@@ -1,0 +1,397 @@
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- LEFT SIDE -->
+
+    <div class="footer-left">
+
+      <!-- TOP -->
+
+      <div class="footer-brand-top">
+
+        <div class="footer-logo-wrapper">
+          <img
+            class="footer-logo"
+            src="/logo.png"
+            alt="DharmicSeeker Logo"
+          />
+        </div>
+
+        <h2 class="brand-title">
+          Dharmic<span>Seeker</span>
+        </h2>
+
+      </div>
+
+      <!-- BOTTOM ROW -->
+
+      <div class="footer-info-row">
+
+        <p class="brand-description">
+          A digital sanctuary for the wisdom traditions of Bharat —
+          built with reverence for the ancient and vision for the future.
+        </p>
+
+        <div class="footer-socials">
+
+          <a href="https://www.instagram.com/dharmicseeker/" aria-label="Instagram">
+            Instagram
+          </a>
+
+          <a href="https://www.youtube.com/@DharmicSeekers" aria-label="YouTube">
+            YouTube
+          </a>
+
+          <a href="#" aria-label="Twitter">
+            Twitter
+          </a>
+
+          <a href="mailto:dharmicseekers@gmail.com" aria-label="Email">
+            Mail
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+
+  <div class="footer-bottom">
+
+    <p class="copyright-text">
+      © 2026 DharmicSeeker.
+      Dedicated to Dharma and the heritage of Bharat.
+    </p>
+
+    <span class="sanskrit">
+      सत्यमेव जयते
+    </span>
+
+  </div>
+
+</footer>
+<style>
+
+:root {
+  --gold: #c8941a;
+  --gold-bright: #f0c75e;
+
+  --saffron: rgb(242, 136, 0);
+
+  --deep-bg: #07040a;
+
+  --text-primary: #f5f1e8;
+  --text-secondary: #cfc7b6;
+
+  --border: rgba(255,255,255,0.08);
+
+  --transition: all 0.3s ease;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 4rem 1.5rem 2rem;
+
+  /* Translucent background */
+  background: rgba(7, 4, 10, 0); /* 0.85 is opacity, adjust as needed */
+  backdrop-filter: blur(12px); /* adds frosted-glass effect */
+
+  border-top: 1px solid rgba(255,255,255,0.10);
+  color: var(--text-primary);
+
+  transition: var(--transition);
+
+  color: #f5f1e8;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.footer-content {
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   LEFT
+========================= */
+
+.footer-left {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+/* =========================
+   TOP ROW
+========================= */
+
+.footer-brand-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.footer-logo-wrapper {
+  width: 64px;
+  height: 64px;
+
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.brand-title {
+  font-family: 'Cinzel', serif;
+
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  margin: 0;
+
+  line-height: 1.2;
+}
+
+.brand-title span {
+  color: rgb(255,136,0);
+
+  text-shadow:
+    0 0 10px rgba(255,136,0,0.4);
+}
+
+/* =========================
+   INFO ROW
+========================= */
+
+.footer-info-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 5rem;
+
+  flex-wrap: wrap;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.brand-description {
+  flex: 1;
+
+  min-width: 260px;
+
+  max-width: 500px;
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+
+  color: #cfc7b6;
+
+  margin: 0;
+}
+
+/* =========================
+   SOCIALS
+========================= */
+
+.footer-socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.4rem;
+
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  font-family: 'Cinzel', serif;
+
+  font-size: 0.78rem;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  color: #cfc7b6;
+
+  position: relative;
+
+  transition: all 0.3s ease;
+}
+
+.footer-socials a::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+
+  height: 1px;
+
+  background: #f0c75e;
+
+  transition: width 0.35s ease;
+}
+
+.footer-socials a:hover {
+  color: #f0c75e;
+}
+
+.footer-socials a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  max-width: 1300px;
+
+  margin: 3rem auto 0;
+
+  padding-top: 1.5rem;
+
+  border-top:
+    1px solid rgba(255,255,255,0.06);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.copyright-text {
+  font-size: 0.82rem;
+
+  line-height: 1.8;
+
+  color: #cfc7b6;
+}
+
+.sanskrit {
+  color: #f0c75e;
+
+  font-family: 'Cinzel', serif;
+
+  letter-spacing: 0.12em;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 3rem 1.25rem 2rem;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .footer-brand-top {
+    justify-content: center;
+  }
+
+  .footer-info-row {
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .brand-description {
+    max-width: 100%;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .footer-logo-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .brand-description {
+    font-size: 0.92rem;
+  }
+}
+</style>
